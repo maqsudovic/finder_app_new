@@ -33,7 +33,7 @@ class Personitem extends StatelessWidget {
                   Text(
                     name,
                     style: const TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 25),
+                        fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   const Text(
                     'Your Order Just Arrived',
@@ -53,7 +53,7 @@ class Personitem extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
       ],
     );

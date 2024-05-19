@@ -94,7 +94,7 @@ class Homepage extends StatelessWidget {
                       height: 50,
                       decoration: BoxDecoration(
                           color: Colors.brown.shade200,
-                          borderRadius: BorderRadius.circular(20)),
+                          borderRadius: BorderRadius.circular(10)),
                       child: const Row(
                         children: [
                           Icon(
@@ -110,10 +110,10 @@ class Homepage extends StatelessWidget {
                       )),
                   const Spacer(),
                   Container(
-                    width: 60,
-                    height: 60,
+                    width: 50,
+                    height: 50,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(10),
                         color: Colors.brown.shade200,
                         border: Border.all(color: Colors.brown)),
                     child: const Icon(
@@ -133,7 +133,7 @@ class Homepage extends StatelessWidget {
                 padding: EdgeInsets.all(5),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(10),
                     color: Colors.brown.shade200),
                 child: const Row(
                   children: [

@@ -12,7 +12,7 @@ class Chatpage extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    'https://thumbs.dreamstime.com/z/рисунок-вручную-бесшовный-узор-черно-белый-из-листка-фруктов-киви-216572111.jpg'),
+                    'https://upload.wikimedia.org/wikipedia/commons/d/d2/Solid_white.png?20060513000852'),
                 fit: BoxFit.none,
                 opacity: 0.2)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -66,7 +66,7 @@ class Chatpage extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.grey.shade300,
                           borderRadius: BorderRadius.circular(15)),
-                      child: Text('Okay, wait a minute 👍🏽'),
+                      child: Text('Okay, wait a minute 👍'),
                     ),
                     Spacer(),
                   ],
@@ -84,7 +84,7 @@ class Chatpage extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.green,
                           borderRadius: BorderRadius.circular(15)),
-                      child: Text('Ok, I am waiting 👍🏽'),
+                      child: Text('Ok, I am waiting 👍'),
                     ),
                   ],
                 ),
@@ -97,7 +97,7 @@ class Chatpage extends StatelessWidget {
           Container(
               padding: EdgeInsets.all(10),
               width: double.infinity,
-              height: 74,
+              height: 60,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(22),
                   color: Colors.white,
@@ -105,8 +105,8 @@ class Chatpage extends StatelessWidget {
               child: const Row(
                 children: [
                   Text(
-                    'Ok, I am waiting 👍🏽',
-                    style: TextStyle(fontSize: 23, fontWeight: FontWeight.w500),
+                    'Ok, I am waiting 👍',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                   ),
                   Spacer(),
                   Icon(Icons.send),

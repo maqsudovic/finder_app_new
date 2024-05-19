@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:food_app_new/personitem.dart';
 import 'package:food_app_new/screens/chatpage.dart';
 
-
 class Person extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -42,7 +41,7 @@ class Person extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    'https://thumbs.dreamstime.com/z/рисунок-вручную-бесшовный-узор-черно-белый-из-листка-фруктов-киви-216572111.jpg'),
+                    'https://cdn.kibrispdr.org/data/910/white-png-2.png'),
                 fit: BoxFit.none,
                 opacity: 0.5)),
         child: Column(
@@ -52,10 +51,10 @@ class Person extends StatelessWidget {
               'Chat',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
             ),
-            Personitem(name: 'Nikita'),
-            Personitem(name: 'Coder'),
-            Personitem(name: 'Yamal'),
-            Personitem(name: 'Janaga'),
+            Personitem(name: 'Analwp'),
+            Personitem(name: 'Guy Hawkins'),
+            Personitem(name: 'Leslie Alexandar'),
+            Personitem(name: 'Dianne Russel'),
           ],
         ),
       ),
