@@ -178,6 +178,10 @@ class _HomepageState extends State<Homepage> {
         return const SizedBox.shrink();
     }
   }
+TextEditingController controller = TextEditingController();
+  String searchQuery = '';
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -191,9 +195,25 @@ class _HomepageState extends State<Homepage> {
             children: [
               Row(
                 children: [
-                  const Text(
-                    'Мы нашли больше 1000 объявлений',
-                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 15),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.7,
+                    child:  TextField(
+                      onChanged: (value) {
+                        setState(() {
+                          searchQuery = value;
+                        });
+                      },
+                      decoration: InputDecoration(
+                        fillColor: Colors.white,
+                        filled: true,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
+                        ),
+                        hintText: 'Search',
+                      ),
+                    ),
                   ),
                   const Spacer(),
                   IconButton(
@@ -227,38 +247,7 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
               const SizedBox(height: 20),
-              const Text('Реклама'),
-              Container(
-                padding: const EdgeInsets.all(20),
-                width: double.infinity,
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.white,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 70,
-                      height: 70,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: AssetImage('assets/images/jm.png'),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    const Text(
-                      'OLX',
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              const Text('Advertices', style: TextStyle(fontSize: 20)),
               const SizedBox(height: 20),
               choices(),
             ],
